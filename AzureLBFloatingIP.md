@@ -167,7 +167,7 @@ root@srv-lambert-haproxyvm1:~# ip addr show
 ![](https://raw.githubusercontent.com/Leejung168/azure/master/access_test2.png)
 
 ####总结:
-由于在云上，IP地址的资源需要申请才能被路由，借助Azure LB的Floating IP这一功能和Windows的Failover Cluster或开源的Keepalived等工具可以实现虚拟IP地址的浮动。 请注意IP在同一时刻Azure LB的frontend IP地址只会在其中一台VM的网络接口上。
+由于在云上，IP地址的资源需要申请才能被路由，借助Azure LB的Floating IP这一功能和Windows的Failover Cluster或开源的Keepalived等工具可以实现虚拟IP地址的浮动。 请注意在我的实验环境IP在同一时刻Azure LB的frontend IP地址只会在其中一台VM的网络接口上。但是我们是可以同时配置同一个frontend IP在多台backend VM。
 
 
 
